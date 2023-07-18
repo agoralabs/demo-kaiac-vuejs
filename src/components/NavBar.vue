@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <v-snackbar v-model="snackbar" color="indigo">
+        <v-snackbar v-model="snackbar" color="blue-grey">
             <div class="d-flex justify-space-between">
                 <span>Project {{ title }} is added sucessfully</span>
                 <v-icon color="white">mdi-check-circle</v-icon>
@@ -12,7 +12,7 @@
                 <div class="d-flex">
                     <img src="/favicon.ico" height="30px">
                     <span class="font-weight-light">Todo</span>
-                    <span>Ninja</span>
+                    <span>App</span>
                 </div>
             </v-app-bar-title>
             <v-spacer></v-spacer>
@@ -22,14 +22,14 @@
             </v-btn>
         </v-app-bar>
 
-        <v-navigation-drawer v-model="drawer" app class="indigo">
+        <v-navigation-drawer v-model="drawer" app class="blue-grey">
             <div class="mt-5 d-flex justify-center">
                 <v-avatar size="160">
-                    <img src="/team-member-1.jpg">
+                    <img src="/team-member-2.jpg">
                 </v-avatar>
             </div>
             <div>
-                <h2 class="white--text text-center my-3">Dada Khan</h2>
+                <h2 class="white--text text-center my-3">Joseph Future</h2>
             </div>
             <div class="d-flex justify-center mb-2">
                 <pop-up @addedProject="showSnackBar"></pop-up>
