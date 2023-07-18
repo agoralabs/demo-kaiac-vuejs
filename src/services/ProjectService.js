@@ -2,7 +2,7 @@ const axios = require('axios');
 
 export async function getAllProjects() {
 
-    const response = await axios.get('/api/v1/projects');
+    const response = await axios.get(`${process.env.API_URL}/api/v1/projects`);
     return response.data;
 
 
@@ -16,6 +16,6 @@ export async function getAllProjects() {
 
 export async function createProject(data) {
 
-    const response = await axios.post(`/api/v1/project`, {user: data});
+    const response = await axios.post(`${process.env.API_URL}/api/v1/project`, {user: data});
     return response.data;
 }
