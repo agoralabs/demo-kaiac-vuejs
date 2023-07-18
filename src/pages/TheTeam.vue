@@ -30,12 +30,13 @@ export default {
     data() {
         return {
             team: [
-                { id: 1, name : 'Prabavathi', role: 'Team Lead', avatar: '/emily.jpeg'},
-                { id: 2, name : 'Aniket Tawani', role: 'Frontend Developer', avatar: '/apollonius.jpeg'},
-                { id: 3, name : 'Vidya Keerthi', role: 'Backend Developer', avatar: '/kiria.jpeg'},
-                { id: 4, name : 'Aman Bansal', role: 'Frontednd Developer', avatar: '/zenke.jpeg'},
-                { id: 5, name : 'Pavani Sudha', role: 'Database Admin', avatar: '/ethel.jpeg'},
-                { id: 6, name : 'Dada Khan', role: 'Full Stack Developer', avatar: '/soji.jpeg'},
+                { id: 1, name : 'Cathy Coulaly', role: 'Team Lead', avatar: '/team-member-1.jpg'},
+                { id: 2, name : 'Joseph Future', role: 'Frontend Developer', avatar: '/team-member-2.jpg'},
+                { id: 3, name : 'Dorine Michou', role: 'Backend Developer', avatar: '/team-member-3.jpg'},
+                { id: 4, name : 'Wesley Weezy', role: 'Frontednd Developer', avatar: '/team-member-4.jpg'},
+                { id: 5, name : 'Marie Jo', role: 'Database Admin', avatar: '/team-member-5.jpg'},
+                { id: 6, name : 'Charles Pika', role: 'Full Stack Developer', avatar: '/team-member-6.jpg'},
+                { id: 7, name : 'Boris John', role: 'Full Stack Developer', avatar: '/team-member-7.jpg'},
             ]
         }
     }

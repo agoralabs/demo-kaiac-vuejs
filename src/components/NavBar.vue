@@ -10,7 +10,7 @@
             <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
             <v-app-bar-title class="text-uppercase grey--text">
                 <div class="d-flex">
-                    <img src="/favicon.svg" height="30px">
+                    <img src="/favicon.ico" height="30px">
                     <span class="font-weight-light">Todo</span>
                     <span>Ninja</span>
                 </div>
@@ -25,7 +25,7 @@
         <v-navigation-drawer v-model="drawer" app class="indigo">
             <div class="mt-5 d-flex justify-center">
                 <v-avatar size="160">
-                    <img src="/soji.jpeg">
+                    <img src="/team-member-1.jpg">
                 </v-avatar>
             </div>
             <div>
