@@ -18,3 +18,10 @@ do
     pattern=${template%.template}
     appenvsubstr $template $source_folder/$generated
 done
+
+#For vuejs only
+env_file=$source_folder/.env.template
+if [ -f "$env_file" ]; then
+    log_msg "generate ./.env file..."
+    appenvsubstr $env_file $source_folder/.env
+fi
