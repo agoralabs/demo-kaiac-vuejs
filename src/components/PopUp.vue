@@ -8,20 +8,20 @@
                 <v-card-title>Add New Project</v-card-title>
                 <v-divider></v-divider>
                 <v-card-text class="pt-5 pb-0">
-                    <v-text-field label="Title" v-model="title" outlined color="indigo" :rules="inputRules"></v-text-field>
-                    <v-textarea label="Information" v-model="info" rows="3" outlined color="indigo" :rules="inputRules"></v-textarea>
+                    <v-text-field label="Title" v-model="title" outlined color="blue-grey" :rules="inputRules"></v-text-field>
+                    <v-textarea label="Information" v-model="info" rows="3" outlined color="blue-grey" :rules="inputRules"></v-textarea>
                     <v-menu v-model="dateMenu" :close-on-content-click="false">
                         <template v-slot:activator="{ on, attrs }">
                             <v-text-field v-model="dueDate" label="Due date" readonly outlined v-bind="attrs"
-                                v-on="on" :rules="[v => !!v || 'Please select the due date']" color="indigo"></v-text-field>
+                                v-on="on" :rules="[v => !!v || 'Please select the due date']" color="blue-grey"></v-text-field>
                         </template>
-                        <v-date-picker v-model="dueDate" @input="dateMenu = false" color="indigo"></v-date-picker>
+                        <v-date-picker v-model="dueDate" @input="dateMenu = false" color="blue-grey"></v-date-picker>
                     </v-menu>
                 </v-card-text>
                 <v-divider></v-divider>
                 <v-card-action class="d-flex justify-end pa-3">
-                    <v-btn class="mr-3" color="indigo" text @click="dialog = false">Cancel</v-btn>
-                    <v-btn class="indigo white--text" @click="validate">Add Project</v-btn>
+                    <v-btn class="mr-3" color="blue-grey" text @click="dialog = false">Cancel</v-btn>
+                    <v-btn class="blue-grey white--text" @click="validate">Add Project</v-btn>
                 </v-card-action>
             </v-card>
         </v-form>
