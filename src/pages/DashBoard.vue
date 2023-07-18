@@ -38,22 +38,37 @@
 </template>
 
 <script>
+import { getAllProjects, createProject } from '../services/ProjectService'
 export default {
     data() {
         return {
-            projects: [
-                { id: 1, title: 'IMDB', name: 'Cathy Coulaly', due: '1st June 2023', status: 'overdue'},
-                { id: 2, title: 'Front end', name: 'Joseph Future', due: '20th June 2023', status: 'ongoing'},
-                { id: 3, title: 'Backend', name: 'Charles Pika', due: '10th June 2023', status: 'completed'},
-                { id: 4, title: 'Database', name: 'Wesley Weezy', due: '1st July 2023', status: 'ongoing'},
-            ]
+            projects: [],
+            numberOfProjects: 0
         }
     },
     methods: {
         sortBy(prop) {
             this.projects.sort((a,b) => a[prop] < b[prop]? -1 : 1);
+        },
+        getAllProjects() {
+            getAllProjects().then(response => {
+                console.log(response)
+                this.projects = response
+                this.numberOfProjects = this.projects.length
+            })
+        },
+        createProject(data) {
+            console.log('data:::', data)
+            createProject(data).then(response => {
+                console.log(response);
+                this.getAllProjects();
+            });
         }
-    }
+  },
+  mounted () {
+    this.getAllProjects();
+  }
+
 }
 </script>
 
