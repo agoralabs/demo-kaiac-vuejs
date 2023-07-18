@@ -16,7 +16,7 @@ Here are some of the benefits of using Vue and Vuetify for a Vue.js project:
 
 # Mobile View
 <div class="row">
-  <img src="screen_shots/responsive-dashboard.png">
-  <img src="screen_shots/responsive-team.png">
-  <img src="screen_shots/responsive-app-drawer.png">  
+  <img src="screen_shots/responsive-dashboard.jpeg">
+  <img src="screen_shots/responsive-team.jpeg">
+  <img src="screen_shots/responsive-app-drawer.jpeg">  
 </div>
