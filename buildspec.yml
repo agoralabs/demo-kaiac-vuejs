@@ -9,6 +9,7 @@ phases:
   build:
     commands:
       - echo build process started now
+      - chmod +x devops/buildspec.sh
       - devops/buildspec.sh
       - npm run build
   post_build:
