@@ -39,6 +39,8 @@
 
 <script>
 import { getAllProjects, createProject } from '../services/ProjectService'
+import { getAllProjectsStatic, createProjectStatic } from '../services/ProjectServiceStatic'
+
 export default {
     data() {
         return {
@@ -51,18 +53,29 @@ export default {
             this.projects.sort((a,b) => a[prop] < b[prop]? -1 : 1);
         },
         getAllProjects() {
-            getAllProjects().then(response => {
-                console.log(response)
-                this.projects = response
-                this.numberOfProjects = this.projects.length
-            })
+            try{
+                getAllProjects().then(response => {
+                console.log(response);
+                this.projects = response;
+                this.numberOfProjects = this.projects.length;
+                });
+            }catch(e){
+                this.projects = getAllProjectsStatic();
+                this.numberOfProjects = this.projects.length;
+            }
+
         },
         createProject(data) {
-            console.log('data:::', data)
-            createProject(data).then(response => {
-                console.log(response);
-                this.getAllProjects();
-            });
+            try{
+                console.log('data:::', data)
+                createProject(data).then(response => {
+                    console.log(response);
+                    this.getAllProjects();
+                });
+            }catch(e){
+                createProjectStatic(data);
+            }
+
         }
   },
   mounted () {
