@@ -10,6 +10,6 @@ export function getAllProjectsStatic() {
 }
 
 export function createProjectStatic(data) {
-
+    console.log(data);
     return { id: 5, title: 'S-Database-2', name: 'Wesley Weezy', due: '3rd July 2023', status: 'ongoing'};
 }
