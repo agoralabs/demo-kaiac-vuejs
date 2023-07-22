@@ -66,7 +66,12 @@ export async function getTeam() {
             "surname": "Jo",
             "avatar": "/team-member-5.jpg",
             "email": "marie.jo@agoralabs.org",
-            "jobRoles": []
+            "jobRoles": [
+              {
+                "id": 5,
+                "name": "Full Stack Developer"
+              }
+            ]
           },
           {
             "id": 6,
@@ -74,7 +79,12 @@ export async function getTeam() {
             "surname": "Pika",
             "avatar": "/team-member-6.jpg",
             "email": "charles.pika@agoralabs.org",
-            "jobRoles": []
+            "jobRoles": [
+              {
+                "id": 6,
+                "name": "Sys Admin"
+              }
+            ]
           },
           {
             "id": 7,
@@ -82,7 +92,12 @@ export async function getTeam() {
             "surname": "John",
             "avatar": "/team-member-7.jpg",
             "email": "boris.john@agoralabs.org",
-            "jobRoles": []
+            "jobRoles": [
+              {
+                "id": 7,
+                "name": "Product Owner"
+              }
+            ]
           }
         ];
     }
