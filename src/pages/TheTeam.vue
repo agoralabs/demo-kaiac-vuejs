@@ -12,7 +12,7 @@
                     <div class="d-flex justify-center">
                         <v-card-title class="pa-0">{{ person.name }}</v-card-title>
                     </div>
-                    <v-card-subtitle class="text-center pa-0">{{ person.role }}</v-card-subtitle>
+                    <v-card-subtitle class="text-center pa-0">{{ person.jobRoles[0].name }}</v-card-subtitle>
                     <v-card-actions class="d-flex justify-center pb-3">
                         <v-btn depressed>
                             <v-icon left>mdi-message</v-icon>
@@ -26,19 +26,27 @@
 </template>
 
 <script>
+import { getTeam } from '../services/TeamService'
+
 export default {
     data() {
         return {
-            team: [
-                { id: 1, name : 'Cathy Coulaly', role: 'Team Lead', avatar: '/team-member-1.jpg'},
-                { id: 2, name : 'Joseph Future', role: 'Frontend Developer', avatar: '/team-member-2.jpg'},
-                { id: 3, name : 'Dorine Michou', role: 'Backend Developer', avatar: '/team-member-3.jpg'},
-                { id: 4, name : 'Wesley Weezy', role: 'Frontednd Developer', avatar: '/team-member-4.jpg'},
-                { id: 5, name : 'Marie Jo', role: 'Database Admin', avatar: '/team-member-5.jpg'},
-                { id: 6, name : 'Charles Pika', role: 'Full Stack Developer', avatar: '/team-member-6.jpg'},
-                { id: 7, name : 'Boris John', role: 'Full Stack Developer', avatar: '/team-member-7.jpg'},
-            ]
+            team: [],
+            numberOfMembers: 0
         }
-    }
+    },
+    methods: {
+        getTeam() {
+            getTeam().then(response => {
+                console.log(response)
+                this.team = response
+                this.numberOfMembers = this.team.length
+            })
+        }
+  },
+  mounted () {
+    this.getTeam();
+  }
+
 }
 </script>

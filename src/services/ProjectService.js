@@ -10,7 +10,7 @@ export async function getAllProjects() {
         return [
             {
               "id": 1,
-              "title": "IMDB",
+              "title": "V-IMDB",
               "due": "2023-06-01 19:51:48",
               "status": "overdue",
               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
@@ -30,7 +30,7 @@ export async function getAllProjects() {
             },
             {
               "id": 2,
-              "title": "Frontend",
+              "title": "V-Frontend",
               "due": "2023-06-20 19:51:48",
               "status": "ongoing",
               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
@@ -50,9 +50,9 @@ export async function getAllProjects() {
             },
             {
               "id": 3,
-              "title": "Backend",
+              "title": "V-Backend",
               "due": "2023-06-10 19:51:48",
-              "status": "complet",
+              "status": "completed",
               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
               "responsible": {
                 "id": 3,
@@ -70,7 +70,7 @@ export async function getAllProjects() {
             },
             {
               "id": 4,
-              "title": "Database",
+              "title": "V-Database",
               "due": "2023-07-01 19:51:48",
               "status": "ongoing",
               "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
