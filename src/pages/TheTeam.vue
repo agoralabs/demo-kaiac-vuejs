@@ -10,7 +10,7 @@
                         </v-avatar>
                     </div>
                     <div class="d-flex justify-center">
-                        <v-card-title class="pa-0">{{ person.name }}</v-card-title>
+                        <v-card-title class="pa-0">{{ person.firstname }} {{ person.surname }}</v-card-title>
                     </div>
                     <v-card-subtitle class="text-center pa-0">{{ person.jobRoles[0].name }}</v-card-subtitle>
                     <v-card-actions class="d-flex justify-center pb-3">
