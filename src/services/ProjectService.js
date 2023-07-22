@@ -8,11 +8,87 @@ export async function getAllProjects() {
     }catch(e){
         console.log(e);
         return [
-            { id: 1, title: 'S-IMDB', name: 'Cathy Coulaly', due: '1st June 2023', status: 'overdue'},
-            { id: 2, title: 'S-Front end', name: 'Joseph Future', due: '20th June 2023', status: 'ongoing'},
-            { id: 3, title: 'S-Backend', name: 'Charles Pika', due: '10th June 2023', status: 'completed'},
-            { id: 4, title: 'S-Database', name: 'Wesley Weezy', due: '1st July 2023', status: 'ongoing'},
-        ];
+            {
+              "id": 1,
+              "title": "IMDB",
+              "due": "2023-06-01 19:51:48",
+              "status": "overdue",
+              "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+              "responsible": {
+                "id": 1,
+                "firstname": "Cathy",
+                "surname": "Coulaly",
+                "avatar": "/team-member-1.jpg",
+                "email": "cathy.coulaly@agoralabs.org",
+                "jobRoles": [
+                  {
+                    "id": 1,
+                    "name": "Team Lead"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 2,
+              "title": "Frontend",
+              "due": "2023-06-20 19:51:48",
+              "status": "ongoing",
+              "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+              "responsible": {
+                "id": 2,
+                "firstname": "Joseph",
+                "surname": "Future",
+                "avatar": "/team-member-2.jpg",
+                "email": "joseph.future@agoralabs.org",
+                "jobRoles": [
+                  {
+                    "id": 2,
+                    "name": "Frontend Developer"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 3,
+              "title": "Backend",
+              "due": "2023-06-10 19:51:48",
+              "status": "complet",
+              "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+              "responsible": {
+                "id": 3,
+                "firstname": "Dorine",
+                "surname": "Michou",
+                "avatar": "/team-member-3.jpg",
+                "email": "dorine.michou@agoralabs.org",
+                "jobRoles": [
+                  {
+                    "id": 3,
+                    "name": "Backend Developer"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 4,
+              "title": "Database",
+              "due": "2023-07-01 19:51:48",
+              "status": "ongoing",
+              "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+              "responsible": {
+                "id": 4,
+                "firstname": "Wesley",
+                "surname": "Weezy",
+                "avatar": "/team-member-4.jpg",
+                "email": "wesley.weezy@agoralabs.org",
+                "jobRoles": [
+                  {
+                    "id": 5,
+                    "name": "Full Stack Developer"
+                  }
+                ]
+              }
+            }
+          ];
     }
 
 

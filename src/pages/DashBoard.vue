@@ -22,7 +22,7 @@
                     </v-flex>
                     <v-flex xs6 sm4 md2 class="pb-1">
                         <div class="caption grey--text">Person Name</div>
-                        <div>{{ project.name }}</div>
+                        <div>{{ project.responsible.firstname }} {{ project.responsible.surname }}</div>
                     </v-flex>
                     <v-flex xs6 sm4 md2 class="pb-1">
                         <div class="caption grey--text">Due Date</div>
