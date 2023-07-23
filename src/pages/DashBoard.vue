@@ -7,7 +7,7 @@
                     <span>Sort</span>
                     <v-icon right>mdi-folder</v-icon>
                 </v-btn>
-                <v-btn depressed class="mb-4" @click="sortBy('name')">
+                <v-btn depressed class="mb-4" @click="sortBy('responsible.firstname')">
                     <span>Sort</span>
                     <v-icon right>mdi-account</v-icon>
                 </v-btn>
