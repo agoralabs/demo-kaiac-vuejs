@@ -5,8 +5,7 @@ export async function getTeam() {
     try{
         const response = await axios.get(`${process.env.VUE_APP_API_URL}/api/v1/users`, {
           headers: {
-            "User-Agent": "PostmanRuntime/7.32.3",
-            "Authorization": "Bearer 2|4Lm8ydYFf3ftBWImn0NAjPXSbIE8JFJKzE7fZNFO"
+            "Accept": "*/*"
           },
         });
         return response.data;
