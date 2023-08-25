@@ -25,7 +25,7 @@ export async function getTeam() {
                   "lastname": "Coulaly",
                   "email": "cathy.coulaly@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
-                  "avatar": "\/team-member-1.jpg",
+                  "avatar": "/team-member-1.jpg",
                   "created_at": "2023-08-25T14:05:44.000000Z",
                   "updated_at": "2023-08-25T14:05:44.000000Z",
                   "job_roles": [
@@ -47,7 +47,7 @@ export async function getTeam() {
                   "lastname": "Future",
                   "email": "joseph.future@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
-                  "avatar": "\/team-member-2.jpg",
+                  "avatar": "/team-member-2.jpg",
                   "created_at": "2023-08-25T14:05:44.000000Z",
                   "updated_at": "2023-08-25T14:05:44.000000Z",
                   "job_roles": [
@@ -69,7 +69,7 @@ export async function getTeam() {
                   "lastname": "Michou",
                   "email": "dorine.michou@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
-                  "avatar": "\/team-member-3.jpg",
+                  "avatar": "/team-member-3.jpg",
                   "created_at": "2023-08-25T14:05:44.000000Z",
                   "updated_at": "2023-08-25T14:05:44.000000Z",
                   "job_roles": [
@@ -91,7 +91,7 @@ export async function getTeam() {
                   "lastname": "Weezy",
                   "email": "wesley.weezy@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
-                  "avatar": "\/team-member-4.jpg",
+                  "avatar": "/team-member-4.jpg",
                   "created_at": "2023-08-25T14:05:44.000000Z",
                   "updated_at": "2023-08-25T14:05:44.000000Z",
                   "job_roles": [
@@ -113,7 +113,7 @@ export async function getTeam() {
                   "lastname": "Jose",
                   "email": "marie.jo@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
-                  "avatar": "\/team-member-5.jpg",
+                  "avatar": "/team-member-5.jpg",
                   "created_at": "2023-08-25T14:05:44.000000Z",
                   "updated_at": "2023-08-25T14:05:44.000000Z",
                   "job_roles": [
@@ -135,7 +135,7 @@ export async function getTeam() {
                   "lastname": "Champ",
                   "email": "charles.champ@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
-                  "avatar": "\/team-member-6.jpg",
+                  "avatar": "/team-member-6.jpg",
                   "created_at": "2023-08-25T14:05:44.000000Z",
                   "updated_at": "2023-08-25T14:05:44.000000Z",
                   "job_roles": [
@@ -157,7 +157,7 @@ export async function getTeam() {
                   "lastname": "John",
                   "email": "boris.john@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
-                  "avatar": "\/team-member-7.jpg",
+                  "avatar": "/team-member-7.jpg",
                   "created_at": "2023-08-25T14:05:44.000000Z",
                   "updated_at": "2023-08-25T14:05:44.000000Z",
                   "job_roles": [
