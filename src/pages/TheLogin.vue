@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { getToken } from '../services/TokenService'
+import { getTokenFromServer } from '../services/TokenService'
 
 export default {
     data() {
@@ -20,7 +20,7 @@ export default {
     },
     methods: {
         getToken() {
-            getToken().then(response => {
+            getTokenFromServer().then(response => {
                 console.log(response)
                 this.token = response
             })
@@ -32,27 +32,3 @@ export default {
 
 }
 </script>
-
-<style>
-.project.completed {
-    border-left: 4px solid turquoise;
-}
-
-.project.ongoing {
-    border-left: 4px solid orange;
-}
-
-.project.overdue {
-    border-left: 4px solid tomato;
-}
-
-.v-chip.completed {
-    background: turquoise !important;
-}
-.v-chip.ongoing {
-    background: orange !important;
-}
-.v-chip.overdue {
-    background: tomato !important;
-}
-</style>

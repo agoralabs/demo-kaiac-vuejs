@@ -1,9 +1,16 @@
 const axios = require('axios');
+import { getTokenFromLocalStorage } from './TokenService'
 
 export async function getAllProjects() {
 
     try{
-        const response = await axios.get(`${process.env.VUE_APP_API_URL}/api/v1/projects`);
+        var token = getTokenFromLocalStorage();
+        const response = await axios.get(`${process.env.VUE_APP_API_URL}/api/v1/projects`, {
+          headers: {
+            "Accept": "*/*",
+            "Bearer" : `${token.access_token}`
+          },
+        });
         return response.data;
     }catch(e){
         console.log(e);
