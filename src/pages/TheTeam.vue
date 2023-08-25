@@ -10,9 +10,9 @@
                         </v-avatar>
                     </div>
                     <div class="d-flex justify-center">
-                        <v-card-title class="pa-0">{{ person.firstname }} {{ person.surname }}</v-card-title>
+                        <v-card-title class="pa-0">{{ person.name }} {{ person.lastname }}</v-card-title>
                     </div>
-                    <v-card-subtitle class="text-center pa-0">{{ person.jobRoles[0].name }}</v-card-subtitle>
+                    <v-card-subtitle class="text-center pa-0">{{ person.job_roles[0].name }}</v-card-subtitle>
                     <v-card-actions class="d-flex justify-center pb-3">
                         <v-btn depressed>
                             <v-icon left>mdi-message</v-icon>
@@ -39,7 +39,7 @@ export default {
         getTeam() {
             getTeam().then(response => {
                 console.log(response)
-                this.team = response
+                this.team = response.response
                 this.numberOfMembers = this.team.length
             })
         }
