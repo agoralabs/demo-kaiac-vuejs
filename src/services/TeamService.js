@@ -5,11 +5,11 @@ export async function getTeam() {
 
     try{
         var token = getTokenFromLocalStorage();
-        
+
         const response = await axios.get(`${process.env.VUE_APP_API_URL}/api/v1/users`, {
           headers: {
             "Accept": "*/*",
-            "Bearer" : `${token.access_token}`
+            "Authorization" : `Bearer ${token.access_token}`
           },
         });
         return response.data;
