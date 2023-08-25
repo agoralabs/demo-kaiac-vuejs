@@ -21,7 +21,7 @@ export async function getTeam() {
           "response": [
               {
                   "id": 1,
-                  "name": "Cathy",
+                  "name": "VCathy",
                   "lastname": "Coulaly",
                   "email": "cathy.coulaly@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
@@ -43,7 +43,7 @@ export async function getTeam() {
               },
               {
                   "id": 2,
-                  "name": "Joseph",
+                  "name": "VJoseph",
                   "lastname": "Future",
                   "email": "joseph.future@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
@@ -65,7 +65,7 @@ export async function getTeam() {
               },
               {
                   "id": 3,
-                  "name": "Dorine",
+                  "name": "VDorine",
                   "lastname": "Michou",
                   "email": "dorine.michou@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
@@ -87,7 +87,7 @@ export async function getTeam() {
               },
               {
                   "id": 4,
-                  "name": "Wesley",
+                  "name": "VWesley",
                   "lastname": "Weezy",
                   "email": "wesley.weezy@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
@@ -109,7 +109,7 @@ export async function getTeam() {
               },
               {
                   "id": 5,
-                  "name": "Marie",
+                  "name": "VMarie",
                   "lastname": "Jose",
                   "email": "marie.jo@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
@@ -131,7 +131,7 @@ export async function getTeam() {
               },
               {
                   "id": 6,
-                  "name": "Charles",
+                  "name": "VCharles",
                   "lastname": "Champ",
                   "email": "charles.champ@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
@@ -153,7 +153,7 @@ export async function getTeam() {
               },
               {
                   "id": 7,
-                  "name": "Boris",
+                  "name": "VBoris",
                   "lastname": "John",
                   "email": "boris.john@agoralabs.org",
                   "email_verified_at": "2023-08-25T14:05:44.000000Z",
