@@ -3,11 +3,11 @@
         <h1 class="grey--text ml-3 mb-4">Dashboard</h1>
         <v-layout class="ml-3">
             <div class="float-left">
-                <v-btn depressed class="mb-4 mr-3" @click="sortBy('title')">
+                <v-btn depressed class="mb-4 mr-3" @click="sortBy('name')">
                     <span>Sort</span>
                     <v-icon right>mdi-folder</v-icon>
                 </v-btn>
-                <v-btn depressed class="mb-4" @click="sortBy('responsible.firstname')">
+                <v-btn depressed class="mb-4" @click="sortBy('responsible.name')">
                     <span>Sort</span>
                     <v-icon right>mdi-account</v-icon>
                 </v-btn>
@@ -18,15 +18,15 @@
                 <v-layout row wrap class="mx-4 mb-8 pa-4">
                     <v-flex xs12 md6 class="pb-1">
                         <div class="caption grey--text">Project Title</div>
-                        <div>{{ project.title }}</div>
+                        <div>{{ project.name }}</div>
                     </v-flex>
                     <v-flex xs6 sm4 md2 class="pb-1">
                         <div class="caption grey--text">Person Name</div>
-                        <div>{{ project.responsible.firstname }} {{ project.responsible.surname }}</div>
+                        <div>{{ project.responsible.name }} {{ project.responsible.lastname }}</div>
                     </v-flex>
                     <v-flex xs6 sm4 md2 class="pb-1">
                         <div class="caption grey--text">Due Date</div>
-                        <div>{{ project.due }}</div>
+                        <div>{{ project.scheduled_at }}</div>
                     </v-flex>
                     <v-flex xs6 sm4 md2 class="pb-1 d-flex align-center justify-sm-end">
                         <v-chip :class="`white--text ${project.status}`">{{ project.status }}</v-chip>
@@ -54,7 +54,7 @@ export default {
         getAllProjects() {
             getAllProjects().then(response => {
                 console.log(response)
-                this.projects = response
+                this.projects = response.response
                 this.numberOfProjects = this.projects.length
             })
         },
