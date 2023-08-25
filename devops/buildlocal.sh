@@ -10,6 +10,7 @@ chmod 777 $source_folder/tmp
 
 arraytpl=($(ls -d $source_folder/devops/*.template))
 
+log_msg "generate files..."
 for template in "${arraytpl[@]}"
 do
     pattern=${template%.template}
@@ -20,8 +21,6 @@ do
 done
 
 #For vuejs only
-env_file=$source_folder/.env.template
-if [ -f "$env_file" ]; then
-    log_msg "generate ./.env file..."
-    appenvsubstr $env_file $source_folder/.env
-fi
+log_msg "generate ./.env file..."
+env_file=$source_folder/devops/.env.template
+appenvsubstr $env_file $source_folder/.env
