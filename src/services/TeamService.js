@@ -3,6 +3,7 @@ const axios = require('axios');
 export async function getTeam() {
 
     try{
+
         const response = await axios.get(`${process.env.VUE_APP_API_URL}/api/v1/users`, {
           headers: {
             "Accept": "*/*"

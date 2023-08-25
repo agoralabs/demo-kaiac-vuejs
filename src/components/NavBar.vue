@@ -62,7 +62,7 @@ export default {
             drawer: false,
             title: '',
             links: [
-                { icon: 'mdi-view-dashboard', name: 'Dashboard', route: '/' },
+                { icon: 'mdi-view-dashboard', name: 'Dashboard', route: '/dashboard' },
                 { icon: 'mdi-folder', name: 'My Projects', route: '/projects' },
                 { icon: 'mdi-account-multiple', name: 'Team', route: '/team' },
             ]
