@@ -3,11 +3,7 @@ const axios = require('axios');
 export async function getAllProjects() {
 
     try{
-        const response = await axios.get(`${process.env.VUE_APP_API_URL}/api/v1/projects`, {
-          headers: {
-            "User-Agent": "PostmanRuntime/7.32.3"
-          },
-        });
+        const response = await axios.get(`${process.env.VUE_APP_API_URL}/api/v1/projects`);
         return response.data;
     }catch(e){
         console.log(e);
