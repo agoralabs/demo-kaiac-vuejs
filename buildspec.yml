@@ -15,8 +15,6 @@ phases:
   post_build:
     commands:
       - echo build process finished, we should uplload to S3 now and invalidate cloudfront cache
-      - echo TF_VAR_ENV_APP_FE_S3_BUCKET_NAME=$TF_VAR_ENV_APP_FE_S3_BUCKET_NAME
-      - echo TF_VAR_ENV_APP_FE_DISTRIBUTION_ID=$TF_VAR_ENV_APP_FE_DISTRIBUTION_ID
       - cd dist
       - ls -la
       - aws s3 sync . s3://$TF_VAR_ENV_APP_FE_S3_BUCKET_NAME --delete
